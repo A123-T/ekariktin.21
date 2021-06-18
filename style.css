@@ -3,7 +3,25 @@
 	padding:0;
 }
 
+input#name{
+		width:240px;
+		border-radius:6px;
+		border:5px solid #ddd;
+		outline:0;
+		padding:7px;
+		background-color:#fff;
+		box-shadow:inset 1px 1px 5px
+		rgba(0,0,0,0.3);
+		}
 
+input#password{
+width :200px;
+outline:0;
+padding:7px;
+border-radius:6px;
+border:5px solid #ddd;
+box-shadow:inset 1px 1px 5px
+}
 body{
 
   background: url("images/91.jpg");
@@ -14,7 +32,7 @@ body{
 }
 div.main{
 	width:400px;
-	margin:100px auto 0px auto;
+	margin:0px auto 0px auto;
 }
 h2{
 	text-align: center;
@@ -33,7 +51,8 @@ div.register{
 color:black;		 
 }
 form#register{
-	margin:40px;
+	
+	margin:70px;
 }
 label{
 	font-family:sans-serif;
@@ -41,15 +60,7 @@ label{
 	font-style:italic;
 	}
 	
-input#name{
-		width:300px;
-		border:1px solid #ddd;
-		outline:0;
-		padding:7px;
-		background-color:#fff;
-		box-shadow:inset 1px 1px 5px
-		rgba(0,0,0,0.3);
-		}
+
 input#submit{
 	width:300px;
 	padding :7px;
