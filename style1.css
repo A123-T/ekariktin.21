@@ -1,0 +1,46 @@
+*{
+    padding:0;
+    margine:0;
+ }
+ div.outer{
+	 width:400px;
+	 margin:100px auto 0px auto;
+	 
+ }
+ div.inner{
+	 width:100%;
+	 font-size:15px;
+	background-color:rgba(0,0,0,0.5);
+	color:black;
+	border-radius:10px;
+	box-shadow:15px 15px 15px
+	rgba(0,0,0,0.6);
+	border:1px solid rgba(225,225,225,0.3);
+	font-family:sans-serif;
+ }
+ 
+ form#marginbox{
+	 margin:70px;
+	 font-family:sans-serif;
+	 
+ }
+ input#name{
+	 padding:7px;
+	 border:3px solid #ddd;
+	 border-radius:10px;
+	 box-shadow:inset 2px 2px 5px rgba(0,0,0,0.3);
+	 outline:0;
+	 font-family:sans-serif;
+ }
+ input#submit{
+	 background-color:rgb(250,100,0,0.8);
+	 color:#fff;
+	 width:100px;
+	  padding:7px;
+	 border:3px solid #ddd;
+	 border-radius:10px;
+	 box-shadow:inset 2px 2px 5px rgba(0,0,0,0.3);
+	 outline:0;
+	 font-family:sans-serif;
+	 
+ }

@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Display sign in peoples </title>
+<style>
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  background-color:gold;
+}</style>
+</head>
+<body bgcolor = "#844d8c">
+<div class="container my-4">
+<div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">Admin login </h1>
+      <p class="lead my-3">This is only for the teachers and some Developers of nit nagaland.<br> it is only for purpose to check no of users corrently inter active with us.</p>
+
+    </div>
+  </div></div>
+<table class = "center" border = "2"  bordercolor="#4d888c">
+
+<tr>
+<h1><i>Total no of regestration in this web :</i></h1>
+<th>&nbsp;&nbsp;First name&nbsp;&nbsp;</th> 
+ 
+<th>&nbsp;&nbsp;Last name&nbsp;&nbsp;</th> 
+<th>&nbsp;&nbsp;Email Address&nbsp;&nbsp; </th> 
+<th>&nbsp;&nbsp;Password&nbsp;&nbsp;</th> 
+<th>&nbsp;&nbsp;Confirm password&nbsp;&nbsp;</th> 
+<th>&nbsp;&nbsp;Phone no&nbsp;&nbsp;</th> 
+</tr>
+
+<?php
+
+include("connection.php");
+error_reporting(0);
+$query = "select * from signin";
+
+$data = mysqli_query($conn,$query);
+$total = mysqli_num_rows($data);
+
+//echo $result['first name']." ".$result['last name']." ".$result['Email Address']." ".$result['password']." ".$result['confirm password']." ".$result['Phone no'];
+
+//echo $total;
+
+if($total!=0)
+{
+	//echo "Table has recods";
+	$result = mysqli_fetch_assoc($data);
+	while(($result = mysqli_fetch_assoc($data)))
+	{
+		echo"<tr>
+		<td>".$result['first name']."</td>
+		<td>".$result['last name']."</td>
+		<td>".$result['Email Address']."</td>
+		<td>".$result['password']."</td>
+		<td>".$result['confirm password']."</td>
+		<td>".$result['Phone no']."</td>
+		 </tr>";
+	}
+		
+}
+else {
+	echo "NO record found";
+}
+?>
+</table>
+</body>
+</html>
